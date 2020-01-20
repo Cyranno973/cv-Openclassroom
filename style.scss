@@ -18,8 +18,8 @@ $marg: 5rem;
 
 
 body {
-  
-    height: 100vh;
+
+
     font-family: sans-serif;
     background-color: $color-text;
 }
@@ -33,6 +33,7 @@ header {
     @include flex;
     background-color: $color-header;
     justify-content: center;
+
 }
 
 .container-profil {
@@ -76,9 +77,18 @@ main {
 }
 
 .skill-content {
-   width: 50%;
-    li{
-        margin-left: 30px;
+    width: 50%;
+    text-align: left;
+    padding: 28px;
+    line-height: 25px;
+
+    ul {
+        padding: 0 30px;
+        text-align: justify;
+
+        li {
+            margin-left: 30px;
+        }
     }
 }
 
@@ -93,10 +103,10 @@ main {
 footer {
     @include flex;
     justify-content: center;
-   
 
-   width: 100%;
-   
+
+    width: 100%;
+
 }
 
 h1 {
@@ -128,7 +138,7 @@ h3 {
     align-items: center;
     justify-content: center;
     width: 40%;
-    
+
 }
 
 .skills {
@@ -155,57 +165,117 @@ h3 {
 p {
     margin: 10px;
 }
-@media screen and (max-width: 1280px)
-{
-    header{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1280px) {
+    header {
         display: block;
         text-align: center;
-        height: 100vh;
-    
+        height: 100%;
     }
-    .container{
+
+    .container {
         width: 100%;
         display: flex;
         justify-content: center;
         align-items: center;
-        
-       
+
+
         margin-top: 0;
     }
-    .container-profil {
-    display: block;
-    
-}
-.container-show-profile-text{
-    width: 100%;
-}
-.show-portrait {
-    width: 100%;
-}
-.show-portrait img{
-    display: inline-block;
-    width: 68%;
 
-}
-p{
-    margin: 20px;
-    padding: 5px;
-}
-    .icone-box {
-        display: none; 
+    .container-profil {
+        display: block;
+
     }
+
+    .container-show-profile-text {
+        width: 100%;
+    }
+
+    .show-portrait {
+        width: 100%;
+    }
+
+    .show-portrait img {
+        display: inline-block;
+        width: 68%;
+
+    }
+
+    p {
+        margin: 20px;
+        padding: 5px;
+    }
+
+    .icone-box {
+        display: none;
+    }
+
     .skill-content {
         width: 100%;
         text-align: center;
         padding: 15px;
-        li{
+
+        li {
             text-align: justify;
         }
-       
+
     }
-    h1{
+
+    h1 {
         margin: 10px;
         padding: 20px;
     }
-    
+    footer {
+        display: block;
+        text-align: center;
+        height: 100%;
+        .container{
+            display: block;
+            h3 {
+                margin: 0.5em;
+                font-size: 20px;
+                span {
+                    background-color: #1BE9A4;
+                    color: #003767;
+                    letter-spacing: 1px;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+            .reseaux {
+                display: -webkit-box;
+                display: -ms-flexbox;
+                display: flex;
+                justify-content: center;
+                a {
+                    text-decoration: none;
+                    color: #fff;
+                    background-color: #0376BC;
+                    font-size: 35px;
+                    padding: 15px;
+                    margin: 15px;
+                }
+            }
+        }
+
+    }
+
 }
