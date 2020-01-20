@@ -46,7 +46,7 @@ header {
 }
 
 .show-portrait img {
-  width: 80%;
+  width: 60%;
 }
 
 span {
@@ -130,6 +130,11 @@ h3 {
   font-size: 30px;
 }
 
+h3 .contact {
+  background: none;
+  color: #fff;
+}
+
 .text-content {
   margin-top: 2rem;
   color: #fff;
@@ -179,7 +184,7 @@ p {
   margin: 10px;
 }
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1000px) {
   header {
     display: block;
     text-align: center;
@@ -246,8 +251,12 @@ p {
     background-color: #1BE9A4;
     color: #003767;
     letter-spacing: 1px;
-    display: block;
+    display: inline-block;
     margin-bottom: 10px;
+  }
+  footer .container h3 .contact {
+    background: none;
+    color: #fff;
   }
   footer .container .reseaux {
     display: -webkit-box;

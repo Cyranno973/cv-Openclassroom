@@ -49,7 +49,7 @@ header {
     width: 50%;
 
     img {
-        width: 80%;
+        width: 60%;
     }
 }
 
@@ -123,6 +123,10 @@ h3 {
     color: #fff;
     margin: 0.5em;
     font-size: 30px;
+    .contact{
+        background: none;
+        color: #fff;
+    }
 }
 
 
@@ -183,7 +187,7 @@ p {
 
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1000px) {
     header {
         display: block;
         text-align: center;
@@ -256,8 +260,12 @@ p {
                     background-color: #1BE9A4;
                     color: #003767;
                     letter-spacing: 1px;
-                    display: block;
+                    display: inline-block;
                     margin-bottom: 10px;
+                }
+                .contact{
+                    background: none;
+                    color: #fff;
                 }
             }
             .reseaux {
